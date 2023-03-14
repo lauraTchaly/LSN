@@ -1,0 +1,135 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon (click)="perfil()" slot="start" name="arrow-back" class="volta"></ion-icon>
+    <ion-title class="titulo">Perfil</ion-title>
+
+    <ion-icon slot="end" (click)="deslogar()" name="log-out" class="volta"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<!-- <ion-content *ngIf="!isLoading">
+  <ion-card>
+
+    <ion-fab vertical="top" horizontal="end" slot="fixed" (click)="edt()">
+      <ion-icon name="settings" class="config"></ion-icon>
+    </ion-fab>
+
+    <ion-card-title class="t">{{Usuario?.nome}} {{Usuario?.sobrenome}}</ion-card-title>
+
+    <ion-card-header>
+      <img src="{{picture}}" class="perfil"/>
+    </ion-card-header>
+
+    <ion-toolbar color="medium">
+      <ion-card-title class="cor1"><ion-icon ios="ios-call" md="md-call"></ion-icon> Telefone: {{Usuario?.telefone}}</ion-card-title>
+      <ion-card-title class="cor2"><ion-icon ios="ios-tablet-portrait" md="md-tablet-portrait"></ion-icon> Celular: {{Usuario?.cel}}</ion-card-title>
+      <ion-card-title class="cor2"><ion-icon ios="ios-map" md="md-map"></ion-icon> Cidade: {{Usuario?.cidade}}</ion-card-title>
+      <ion-card-title class="cor4"><ion-icon ios="ios-at" md="md-at"></ion-icon> Email: {{usuarioEmail}}</ion-card-title>
+    </ion-toolbar>
+  </ion-card>
+
+</ion-content> -->
+
+
+
+
+<ion-content *ngIf="!isLoading" >
+
+  <ion-item>
+    <ion-avatar slot="start">
+      <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+    <ion-label>
+      {{Usuario?.nome}}
+    </ion-label>
+  </ion-item>
+  
+  <ion-card-header>
+    <img src="{{picture}}" class="perfil"/>
+  </ion-card-header>
+  <ion-card>
+
+  <ion-toolbar color="medium">
+    <ion-card-title class="cor1"><ion-icon ios="ios-call" md="md-call"></ion-icon> CPF: {{Usuario?.cpf}}</ion-card-title>
+    <ion-card-title class="cor2"><ion-icon ios="ios-tablet-portrait" md="md-tablet-portrait"></ion-icon> Celular: {{Usuario?.celular}}</ion-card-title>
+    <ion-card-title class="cor2"><ion-icon ios="ios-map" md="md-map"></ion-icon> Endereço: {{Usuario?.endereco}}</ion-card-title>
+    <ion-card-title class="cor2"><ion-icon ios="ios-map" md="md-map"></ion-icon> Data de Nascimento: {{Usuario?.nascimento}}</ion-card-title>
+
+    <ion-card-title class="cor4"><ion-icon ios="ios-at" md="md-at"></ion-icon> Email: {{usuarioEmail}}</ion-card-title>
+  </ion-toolbar>
+</ion-card>
+
+
+
+
+
+  
+  <ion-card>
+    <ion-icon name="card"></ion-icon>
+    <ion-card-header>
+      <ion-card-title>LSN PARKING PASS</ion-card-title>
+    </ion-card-header>
+    <ion-button>Assine Já</ion-button>
+  
+    
+  </ion-card>
+
+  <ion-card>
+    <ion-icon name="call"></ion-icon>
+    <ion-card-header>
+      <ion-card-title>Central de Atendimento</ion-card-title>
+      <ion-button>Assine Já</ion-button>
+    </ion-card-header>
+  
+    
+  </ion-card>
+
+  <ion-card>
+    <ion-icon name="cash"></ion-icon>
+    <ion-card-header>
+      <ion-card-title>Metodos de Pagamento</ion-card-title>
+      <ion-button>Assine Já</ion-button>
+    </ion-card-header>
+  </ion-card>
+
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Geral</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <ion-icon name="settings"></ion-icon>
+          </ion-thumbnail>
+          <ion-label>Configurações</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <ion-icon name="chatbubbles"></ion-icon>
+          </ion-thumbnail>
+          <ion-label>Mensagens</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <ion-icon name="alert"></ion-icon>
+
+          </ion-thumbnail>
+          <ion-label>Notificações</ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <ion-icon name="briefcase"></ion-icon>
+
+          </ion-thumbnail>
+          
+          <ion-label>Venha se afiliar</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
